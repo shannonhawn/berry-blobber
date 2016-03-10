@@ -48,7 +48,16 @@ berries.forEach(function (berry) {
     document.write('<dt>Location</dt>');
     document.write('<dd>Between ' + item.loc[0] + ' km & ' + item.loc[1] + ' km from the Sun.');
     document.write('</dl>');
-    
+    document.write('<dt>Grows on a shrub?</dt>');
+    document.write('<dd>' + berry.onShrub + '</dd>');
+    document.write('<dt>Grows on a shrub?</dt>');
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy + '<dd>');
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + berry.carbs + '<dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein + '<dd>');
+    document.write('<ol>');
   });
   };
 
