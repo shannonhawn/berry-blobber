@@ -38,16 +38,13 @@ var redCurrant = {
 var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
 
-berries.forEach(function (berry) {
+  document.write('<ol>');
+
+  berries.forEach(function (berry) {
     document.write('<h2>' + berry.name + '</h2>');
     document.write('<dl>');
     document.write('<dt>E-mail address</dt>');
-    document.write('<dd><a href="mailto:' + item.email + '">' + item.email + '</a></dd>');
-    document.write('<dt>Phone number</dt>');
-    document.write('<dd><a href="tel:' + item.tel + '">' + item.tel + '</a></dd>');
-    document.write('<dt>Location</dt>');
-    document.write('<dd>Between ' + item.loc[0] + ' km & ' + item.loc[1] + ' km from the Sun.');
-    document.write('</dl>');
+
     document.write('<dt>Grows on a shrub?</dt>');
     document.write('<dd>' + berry.onShrub + '</dd>');
     document.write('<dt>Grows on a shrub?</dt>');
@@ -57,24 +54,9 @@ berries.forEach(function (berry) {
     document.write('<dd>' + berry.carbs + '<dd>');
     document.write('<dt>Protein</dt>');
     document.write('<dd>' + berry.protein + '<dd>');
-    document.write('<ol>');
   });
-  };
-
-
-
-
-
-})
-
-
-
-
-
-
-
-
-}
+  document.write('<ol>');
+};
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
